@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Card, Avatar } from '@material-ui/core';
+import { Card, Chip } from '@material-ui/core';
 
 export const Container = styled(Card)`
   width: 100%;
@@ -17,14 +17,6 @@ export const CardLeft = styled.div`
   flex-direction: row;
 `;
 
-export const Image = styled.div`
-  margin-right: 12px;
-  display: flex;
-  align-items: center;
-`;
-
-export const RepoImage = styled(Avatar)``;
-
 export const Description = styled.div`
   p {
     font-size: 24px;
@@ -39,19 +31,4 @@ export const Description = styled.div`
 
 export const CardRight = styled.div``;
 
-export const Button = styled.button`
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-
-  svg {
-    color: #777;
-    transition: color 0.4s;
-  }
-
-  &:hover {
-    svg {
-      color: #333;
-    }
-  }
-`;
+export const Label = styled(Chip)``;

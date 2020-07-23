@@ -1,27 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 import {
-  Container, CardLeft, Image, Description, RepoImage, CardRight, Button,
+  Container, CardLeft, Description, CardRight,
 } from './styles';
 
-function RepoList() {
+function RepoList({ repo }) {
   return (
     <Container>
       <CardLeft>
-        <Image>
-          <RepoImage alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-        </Image>
         <Description>
-          <p>GithubApp</p>
-          <span>Um app para visualizar repos do github</span>
+          <p>{repo.name}</p>
+          <span>{repo.description}</span>
         </Description>
       </CardLeft>
       <CardRight>
-        <Button>
+        <Link to={`/repo/${repo.full_name}`}>
           <ChevronRightIcon />
-        </Button>
+        </Link>
       </CardRight>
     </Container>
   );

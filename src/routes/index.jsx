@@ -8,7 +8,7 @@ function Routes() {
   return (
     <Switch>
       <Route path="/" exact component={Dashboard} />
-      <Route path="/repo" component={Repo} />
+      <Route path="/repo/:name+" component={Repo} />
     </Switch>
   );
 }
