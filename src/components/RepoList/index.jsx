@@ -1,7 +1,9 @@
 import React from 'react';
 
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+
 import {
-  Container, CardLeft, Image, Description, RepoImage, CardRight,
+  Container, CardLeft, Image, Description, RepoImage, CardRight, Button,
 } from './styles';
 
 function RepoList() {
@@ -17,7 +19,9 @@ function RepoList() {
         </Description>
       </CardLeft>
       <CardRight>
-        <span>Ir lá!</span>
+        <Button>
+          <ChevronRightIcon />
+        </Button>
       </CardRight>
     </Container>
   );

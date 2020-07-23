@@ -37,3 +37,20 @@ export const Description = styled.div`
 `;
 
 export const CardRight = styled.div``;
+
+export const Button = styled.button`
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+
+  svg {
+    color: #777;
+    transition: color 0.4s;
+  }
+
+  &:hover {
+    svg {
+      color: #333;
+    }
+  }
+`;
